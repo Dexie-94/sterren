@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mijn portofolio student-GLR</title>
-    <link rel="stylesheet" href="menucss.css">
-</head>
-<body>
-    <header>
-        <h1> Welkom bij mijn portofolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="overmij.html">over mij</a></li>
-                <li><a href="projecten.html">Projecten</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="stars-container"></div>
+    <link rel="stylesheet" href="menucss.css" />
+  </head>
+  <body>
     <canvas id="canvas"></canvas>
-   <script src="stars.js"></script>
-    <footer>
-        <p> gemaakt door Destiny van der veer 2025</p>
+    
+    <header style="position: absolute; z-index: 1; left: 50%; top: 20px; transform: translateX(-50%); text-align: center;">
+      <h1>Welkom bij mijn portofolio</h1>
+      <nav>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="display: inline; margin-right: 10px;"><a href="index.html">Home</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="overmij.html">over mij</a></li>
+        <li style="display: inline; margin-right: 10px;"><a href="projecten.html">Projecten</a></li>
+        <li style="display: inline;"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <footer style="position: absolute; z-index: 1; left: 50%; bottom: 20px; transform: translateX(-50%); text-align: center;">
+      <p>Gemaakt door Destiny van der veer 2025</p>
     </footer>
-</body>
+    
+    <script src="stars.js"></script>
+  </body>
 </html>
