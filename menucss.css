@@ -1,0 +1,47 @@
+h1 {color: transparent;
+    font-size: 95px;
+    text-align: center;
+    background-image: url(letter.jpg);
+    -webkit-background-clip: text;
+    background-size: contain;
+    background-clip: text;
+    }
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+background-image: url(R.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+footer {color : white;
+font-size: 20px;
+}
+#stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+    background: radial-gradient(white, rgba(255, 255, 255, 0,5));
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    opacity: 0.8;
+    animation: floatAround 10s infinite linear alternate;
+}
+
+@keyframes floatAround {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(var(--xMove), var(--yMove)); }
+}
+canvas {
+    display: block;
+}
