@@ -1,18 +1,27 @@
-h1 {
+h1  {
     color: transparent;
+    text-shadow: 3px  3px 6px rgba(172, 170, 170, 0.5);
     font-size: 95px;
     text-align: center;
     background-image: url(letter.jpg);
     -webkit-background-clip: text;
     background-size: contain;
     background-clip: text;
-    }
+    -ms-text-kashida-space: inherit;
+    
+}
 body:before {
     content: "";
     position: absolute;
     inset: 40% -60% 0 -60%;
     opacity: 0.3;
    pointer-events: none;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: blur(10px);
+    transform: scale(1.2);
 }
 
 nav {
@@ -34,10 +43,11 @@ nav.before .active-element {
 body {
     margin: 0;
     overflow: hidden;
-background-image: url(R.jpg);
+background-image: url(2.jpeg);
 background-size: cover;
 background-attachment: fixed;
 }
 footer {color : white;
 font-size: 20px;
+text-align-last: left;
 }
