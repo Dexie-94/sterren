@@ -8,7 +8,8 @@ const canvas = document.getElementById("canvas");
         }
         window.addEventListener("resize", resizeCanvas);
         resizeCanvas();
-
+        const aantallSterren = 150; // Aantal sterren
+const Sterren= []
         // Ster-object
         class Star {
             constructor() {

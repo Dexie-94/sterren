@@ -49,5 +49,7 @@ background-attachment: fixed;
 }
 footer {color : white;
 font-size: 20px;
-text-align-last: left;
+text-align: bottom;
+text-shadow: rgba(202, 202, 202, 0.5);
+text-transform: unset;
 }
