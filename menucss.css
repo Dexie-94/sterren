@@ -48,7 +48,7 @@ body:before {
     transition: all 0.6s ease;
 }
 .link::before {
-   bottem: 0;
+   bottom: 0;
     left: 0;
 }
 
