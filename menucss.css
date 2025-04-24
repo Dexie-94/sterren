@@ -1,7 +1,8 @@
 h1  {
+    
     color: transparent;
-    text-shadow: 3px  3px 6px rgba(172, 170, 170, 0.5);
-    font-size: 95px;
+    text-shadow: 3px  3px 6px rgba(154, 153, 153, 0.5);
+    font-size: 85px;
     text-align: center;
     background-image: url(letter.jpg);
     -webkit-background-clip: text;
@@ -55,7 +56,7 @@ body:before {
 .link:hover::before {
     transform: scaleX(1);
 }
-nav {
+#nav {
     position: relative;
     z-index: 1;
 }
@@ -68,17 +69,32 @@ ul {
     gap: 1.2rem;
 }
    
-nav.before .active-element {
-    transform: rotatey(180deg);
+ #footer {
+    position: absolute;
+    color: rgb(16, 0, 135);
+    text-shadow: 0 0 10px rgba(35, 47, 116, 0.5);
+    margin: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+   
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    
 }
 body {
-    margin: 0;
+    width: 1000px;
+    margin: 0 auto;
     overflow: hidden;
 background-image: url(2.jpeg);
 background-size: cover;
 background-attachment: fixed;
 }
-footer {color : white;
+footer {
+ 
+    margin-right: 5px;
 font-size: 20px;
 text-align: bottom;
 text-shadow: rgba(202, 202, 202, 0.5);
@@ -91,7 +107,28 @@ text-transform: unset;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 9999;
-    pointer-events: none;
+    z-index: -1;
     
+}
+.ik {
+    position: absolute;
+    position: right;
+    width: 210px;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-left: 400px;
+    margin-top: 50px;
+    text-shadow: rgba(202, 202, 202, 0.5);
+    text-transform: unset;
+    padding: 0px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    z-index: 1;
+    border-inline-color: 3px  3px 6px rgba(154, 153, 153, 0.5);
 }
