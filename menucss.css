@@ -84,12 +84,14 @@ text-align: bottom;
 text-shadow: rgba(202, 202, 202, 0.5);
 text-transform: unset;
 }
-.sterren {
+
+#canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 9999;
     pointer-events: none;
-    z-index:9999;
+    
 }
