@@ -65,7 +65,7 @@ body:before {
     width: 1000px;
     position: fixed;
     z-index: 1;
-    top: 160px;
+    top: 170px;
   
 }
 ul {
@@ -92,6 +92,7 @@ h2 {
     margin-bottom: 20px;
     margin-right: 350px;
     padding: 10px;
+    top-: 150px;
    
    
     border-radius: 10px;
@@ -163,5 +164,13 @@ text-transform: unset;
     border-width: 10px;
     border-color: rgba(154, 153, 153, 0.5);
 }
+audio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  
 
-
+}
