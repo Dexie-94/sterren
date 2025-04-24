@@ -29,7 +29,7 @@ body:before {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 40 px;
+    justify-content: center;
 }
 .link {
     position: relative;
@@ -62,7 +62,7 @@ body:before {
     font-size: 30px;
     text-align: center;
     height: 100px;
-    width: 100%;
+    width: 1000px;
     position: fixed;
     z-index: 1;
     top: 160px;
