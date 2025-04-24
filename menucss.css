@@ -9,6 +9,7 @@ h1  {
     background-size: contain;
     background-clip: text;
     -ms-text-kashida-space: inherit;
+    border-bottom: 1px solid rgba(154, 153, 153, 0.5);
     
 }
 body:before {
@@ -57,16 +58,43 @@ body:before {
     transform: scaleX(1);
 }
 #nav {
-    position: relative;
+
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
     z-index: 1;
+    top: 160px;
+  
 }
 ul {
+   
    margin: 0;
     padding: 0;
     list-style: none;
     margin: 0;
     display: flex;
     gap: 1.2rem;
+}
+il {
+   
+  display: inline;
+  margin-right: 10px;
+    padding: 0;
+}
+h2 {
+    color: rgb(16, 0, 135);
+    text-shadow: 0 0 10px rgba(35, 47, 116, 0.5);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 350px;
+    padding: 10px;
+   
+   
+    border-radius: 10px;
 }
    
  #footer {
@@ -113,8 +141,8 @@ text-transform: unset;
 .ik {
     position: absolute;
     position: right;
-    width: 210px;
-    height: 210px;
+    width: 270px;
+    height: 270px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -131,4 +159,9 @@ text-transform: unset;
     -webkit-border-radius: 100px;
     z-index: 1;
     border-inline-color: 3px  3px 6px rgba(154, 153, 153, 0.5);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgba(154, 153, 153, 0.5);
 }
+
+
