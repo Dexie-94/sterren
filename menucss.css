@@ -142,11 +142,8 @@ h2 {
     text-shadow: #ffffff;
     box-shadow: #013cfe;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    box-sizing: border-box;
-    border-width: 2px;
-    margin-left: 1px;
-    margin-top: 50px;
-    margin-right: 300px;
+    
+    
    }
 body {
     width: 1000px;
