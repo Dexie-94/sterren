@@ -108,11 +108,11 @@ il {
 h2 {
   color: rgba(255, 255, 255, 0.757);
   text-shadow: 0 0 10px rgba(0, 15, 100, 0.99);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   margin-inline: 50px;
-  margin-top: 100px;
-
+  margin-top: 70px;
+  margin-bottom: 25px;;
   margin-right: 380px;
   padding: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.592);
@@ -276,7 +276,7 @@ body {
   padding: 15px;
   margin-block: 1.5px;
   overflow-x: auto; /* Maakt de container scrollbaar als de kaarten breder zijn dan de container */
-  height: 320px;
+  height: 300px;
 }
 
 .card {
