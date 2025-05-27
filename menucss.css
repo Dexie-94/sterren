@@ -1,305 +1,283 @@
-h1  {
-    
-    color: transparent;
-    text-shadow: 3px  3px 6px rgba(154, 153, 153, 0.5);
-    font-size: 85px;
-    text-align: center;
-    background-image: url(letter.jpg);
-    -webkit-background-clip: text;
-    background-size: contain;
-    background-clip: text;
-    -ms-text-kashida-space: inherit;
-    border-bottom: 1px solid rgba(154, 153, 153, 0.5);
-    cursor:text;
-    margin-top: 20px;
+h1 {
+  color: transparent;
+  text-shadow: 3px 3px 6px rgba(154, 153, 153, 0.5);
+  font-size: 85px;
+  text-align: center;
+  background-image: url(letter.jpg);
+  -webkit-background-clip: text;
+  background-size: contain;
+  background-clip: text;
+  -ms-text-kashida-space: inherit;
+  border-bottom: 1px solid rgba(154, 153, 153, 0.5);
+  cursor: text;
+  margin-top: 20px;
 }
 body:before {
-    content: "";
-    position: absolute;
-    inset: 40% -60% 0 -60%;
-    opacity: 0.3;
-   pointer-events: none;
-    background-image: url(1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-    filter: blur(10px);
-    transform: scale(1.2);
-    
+  content: "";
+  position: absolute;
+  inset: 40% -60% 0 -60%;
+  opacity: 0.3;
+  pointer-events: none;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  filter: blur(10px);
+  transform: scale(1.2);
 }
 .list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .link {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    border-bottom-color: rgba(11, 22, 109, 0.5);
-    border-bottom-style:solid;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; 
-    border-bottom-width: 4px;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    box-shadow: 0 0 10px rgba(69, 84, 169, 0.661);
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: paleturquoise;
-    font-weight: 700;
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.048);
-    background-color: blur (50px);
-    @keyframes onclick {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-5px);
-        }
-        100% {
-            transform: translateY(0);
-        }
-       
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-bottom-color: rgba(11, 22, 109, 0.5);
+  border-bottom-style: solid;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-width: 4px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  box-shadow: 0 0 10px rgba(69, 84, 169, 0.661);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: paleturquoise;
+  font-weight: 700;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.048);
+  background-color: blur (50px);
+  @keyframes onclick {
+    0% {
+      transform: translateY(0);
     }
-   
-   
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 .link before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: turquoise;
-    border-radius: 5px;
-    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
-    transition: all 0.6s ease;
-
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: turquoise;
+  border-radius: 5px;
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  transition: all 0.6s ease;
 }
 .link::before {
-   bottom: 0;
-    left: 0;
-    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
-    transition: transform 0.3s ease;
+  bottom: 0;
+  left: 0;
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 .link:hover::before {
-    transform:matrix(1.05, 0, 0, 1.05, 0, 0);
-    transition: transform 0.3s ease;
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 #nav {
-    font-size: 30px;
-    text-align: center;
-    height: 100px;
-    width: 1000px;
-    position: fixed;
-    z-index: 1;
-    top: 130px;
-  
+  font-size: 30px;
+  text-align: center;
+  height: 100px;
+  width: 1000px;
+  position: fixed;
+  z-index: 1;
+  top: 130px;
 }
 ul {
-   
-   margin: 0;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    display: flex;
-    gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 1.2rem;
 }
 il {
-   
   display: inline;
   margin-right: 10px;
-    padding: 0;
+  padding: 0;
 }
 h2 {
-    color: rgba(255, 255, 255, 0.757);
-    text-shadow: 0 0 10px rgba(0, 15, 100, 0.99);
-    font-size: 30px;
-    text-align: center;
-    margin-inline: 50px;
-    margin-top: 100px;
- 
-    margin-right: 380px;
-    padding: 1px;
+  color: rgba(255, 255, 255, 0.757);
+  text-shadow: 0 0 10px rgba(0, 15, 100, 0.99);
+  font-size: 30px;
+  text-align: center;
+  margin-inline: 50px;
+  margin-top: 100px;
+
+  margin-right: 380px;
+  padding: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.592);
-    border-bottom-width: 2px;
-   border-bottom-left-radius: 15px;
-   font-family: "Comic Sans MS", cursive, sans-serif;
-   font-size: 40px;
-   border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-left-radius: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 40px;
+  border-bottom: solid;
   border-radius: 10px;
 }
-   #footer {
-  
-    color: paleturquoise;
-   
-    z-index: 1;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  
-   }
-   .p3 {
-    color: paleturquoise;
-    text-shadow: #ffffff;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    
-    
-   }
-body {
-    width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-background-image: url(2.jpeg);
-background-size: cover;
-background-attachment: fixed;
+#footer {
+  color: paleturquoise;
+
+  z-index: 1;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
-
-
+.p3 {
+  color: paleturquoise;
+  text-shadow: #ffffff;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url(2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 #canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 .ik {
-    position: absolute;
-    position: right;
-    width: 270px;
-    height: 270px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: white;
-    float: right;
-    margin-left: 400px;
-    margin-top: 50px;
-    text-shadow: rgba(202, 202, 202, 0.5);
-    text-transform: unset;
-    padding: 0px;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    z-index: 1;
-    border-inline-color: 3px  3px 6px rgba(154, 153, 153, 0.5);
-    border-style:groove;
-    border-width: 10px;
-    border-color: rgba(166, 166, 166, 0.315);
-    cursor: not-allowed;
+  position: absolute;
+  position: right;
+  width: 270px;
+  height: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  float: right;
+  margin-left: 400px;
+  margin-top: 50px;
+  text-shadow: rgba(202, 202, 202, 0.5);
+  text-transform: unset;
+  padding: 0px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  z-index: 1;
+  border-inline-color: 3px 3px 6px rgba(154, 153, 153, 0.5);
+  border-style: groove;
+  border-width: 10px;
+  border-color: rgba(166, 166, 166, 0.315);
+  cursor: not-allowed;
 }
 
 .overmij {
-    font-size: 18px;
-    color: paleturquoise;
-    text-shadow: #ffffff;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    box-sizing: border-box;
-    border-width: 2px;
-    margin-left: 100px;
+  font-size: 18px;
+  color: paleturquoise;
+  text-shadow: #ffffff;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  box-sizing: border-box;
+  border-width: 2px;
+  margin-left: 100px;
   margin-top: 130px;
   margin-bottom: auto;
-    margin-right: 380px;
-    background-color: rgba(0, 0, 0, 0.229);
-    border-bottom-right-radius: 6px; 
-    border-bottom-width: 4px;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    border-style:double  ;
-    border-color: rgba(69, 84, 169, 0.661);
+  margin-right: 380px;
+  background-color: rgba(0, 0, 0, 0.229);
+  border-bottom-right-radius: 6px;
+  border-bottom-width: 4px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-style: double;
+  border-color: rgba(69, 84, 169, 0.661);
 }
 .overmij2 {
-    font-size: 18px;
-    color: paleturquoise;
-    text-shadow: #ffffff;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    box-sizing: border-box;
-    border-width: 2px;
-    margin-bottom: auto;
-    margin-right: 380px;
-    margin-left: 100px;
-    background-color: rgba(0, 0, 0, 0.229);
-    border-bottom-right-radius: 6px; 
-    border-bottom-width: 4px;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    border-style:double  ;
-    border-color: rgba(69, 84, 169, 0.661);
+  font-size: 18px;
+  color: paleturquoise;
+  text-shadow: #ffffff;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  box-sizing: border-box;
+  border-width: 2px;
+  margin-bottom: auto;
+  margin-right: 380px;
+  margin-left: 100px;
+  background-color: rgba(0, 0, 0, 0.229);
+  border-bottom-right-radius: 6px;
+  border-bottom-width: 4px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-style: double;
+  border-color: rgba(69, 84, 169, 0.661);
 }
 .over1 {
-    font-size: 18px;
-    color: paleturquoise;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  color: paleturquoise;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
-   
-   
-    
+
 .ik2 {
-    position: absolute;
-    position: right;
-    width: 270px;
-    height: 270px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-    color: white;
-    float: right;
-    margin-left: 400px;
-    margin-top: 50px;
-    text-shadow: rgba(202, 202, 202, 0.5);
-    text-transform: unset;
-    padding: 0px;
-    border-radius: 80px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    z-index: 1;
-    border-inline-color: 3px  3px 6px rgba(154, 153, 153, 0.5);
-    border-style:groove;
-    border-width: 10px;
-    border-color: rgba(166, 166, 166, 0.315);
-    cursor: not-allowed;
+  position: absolute;
+  position: right;
+  width: 270px;
+  height: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: white;
+  float: right;
+  margin-left: 400px;
+  margin-top: 50px;
+  text-shadow: rgba(202, 202, 202, 0.5);
+  text-transform: unset;
+  padding: 0px;
+  border-radius: 80px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  z-index: 1;
+  border-inline-color: 3px 3px 6px rgba(154, 153, 153, 0.5);
+  border-style: groove;
+  border-width: 10px;
+  border-color: rgba(166, 166, 166, 0.315);
+  cursor: not-allowed;
 }
 .logo6 {
-   height: 30px;
-    width: 30px;
-   
+  height: 30px;
+  width: 30px;
 }
 .p1 {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .page {
-   font-size: 18px;
-    color: rgb(40, 230, 142);
-    text-shadow: #ffffff;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  color: rgb(40, 230, 142);
+  text-shadow: #ffffff;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
-
 
 .card-container2 {
   display: flex;
-   width: 1000px;
-  height: 250px;
+  width: 1000px;
   gap: 40px;
-  justify-content:center; /* Centreert de kaarten */
+  justify-content: center; /* Centreert de kaarten */
   padding: 15px;
-    margin-block: 1.5px;
+  margin-block: 1.5px;
   overflow-x: auto; /* Maakt de container scrollbaar als de kaarten breder zijn dan de container */
-  scroll-snap-type: x mandatory; /* Zorgt ervoor dat de kaarten netjes in lijn komen te staan bij scrollen */
+  height: 320px;
 }
-
 
 .card {
   flex: 1 1 400px;
@@ -312,7 +290,7 @@ background-attachment: fixed;
 }
 
 .card:hover {
-  transform:matrix(1.05, 0, 0, 1.05, 0, 0);
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
 }
 
 .card img {
@@ -320,46 +298,46 @@ background-attachment: fixed;
   height: 140px;
   display: block;
   border-bottom: #30eaff;
-  border-bottom-style:groove;
+  border-bottom-style: groove;
   border-width: 5px;
- 
 }
 
 .card-content {
   padding: 15px;
 }
 
-
 .h4 {
-  display:contents;
- font-size: 18px;
-    color: rgb(253, 255, 255);
-    text-shadow: #ffffff;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  color: rgb(253, 255, 255);
+  text-shadow: #ffffff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-left: 5px;
 }
+
 .p4 {
-    font-size: 18px;
-    color: rgb(253, 255, 255);
-    text-shadow: #ffffff;
-    box-shadow: #013cfe;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    background-color: rgba(255, 254, 254, 0.229);
+  font-size: 14px;
+  color: rgb(253, 255, 255);
+  text-shadow: #ffffff;
+  box-shadow: #013cfe;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: rgba(255, 254, 254, 0.229);
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
 }
+
 .button {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  flex-direction:column-reverse;
-  padding: 1rem;
+  flex-direction: column;
   font-size: 18px;
   text-align: center;
-  display:contents;
   background-color: #a17af085;
   box-shadow: #9a02ff;
   color: #fffeff;
-  text-decoration:wavy;
+  text-decoration: wavy;
   transition: background-color 0.3s ease;
-  hover-effect: brightness(0.9);
   padding: 10px 20px;
   border-radius: 5px;
-  hover-transition: transform 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.205);
+  margin-left: 5px;
 }
