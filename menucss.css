@@ -234,6 +234,15 @@ background-attachment: fixed;
     border-style:double  ;
     border-color: rgba(69, 84, 169, 0.661);
 }
+.over1 {
+    font-size: 18px;
+    color: paleturquoise;
+    box-shadow: #013cfe;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+   
+   
+    
 .ik2 {
     position: absolute;
     position: right;
@@ -277,39 +286,20 @@ background-attachment: fixed;
     box-shadow: #013cfe;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.card-container1 {
-  display: flex;
-   width: 1000px;
-  height:  100px;
-  flex-wrap:calc(100% - 10px);
-  gap: 10px;
-  justify-content:flex-start; /* Centreert de kaarten */
-  padding: 15px;
-  margin-block: 0.5px;
-  margin-top: auto;
-}
+
+
 .card-container2 {
   display: flex;
    width: 1000px;
-  height: 100px;
-  flex-wrap: calc(100% - 10px);
-  gap: 10px;
+  height: 250px;
+  gap: 40px;
   justify-content:center; /* Centreert de kaarten */
   padding: 15px;
-    margin-block: 0.5px;
+    margin-block: 1.5px;
+  overflow-x: auto; /* Maakt de container scrollbaar als de kaarten breder zijn dan de container */
+  scroll-snap-type: x mandatory; /* Zorgt ervoor dat de kaarten netjes in lijn komen te staan bij scrollen */
 }
-.card-container3 {
-  display: flex;
-  width:100px;
-  height: 100px;
-  flex-wrap: calc(100% - 10px);
-  gap: 10px;
-  justify-content:flex-end; /* Centreert de kaarten */
-  padding: 15px;
-    margin-block: 0.5px;
-    border-bottom: 50px;
-    
-}
+
 
 .card {
   flex: 1 1 400px;
@@ -323,27 +313,53 @@ background-attachment: fixed;
 
 .card:hover {
   transform:matrix(1.05, 0, 0, 1.05, 0, 0);
-
- 
-  
 }
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 140px;
   display: block;
+  border-bottom: #30eaff;
+  border-bottom-style:groove;
+  border-width: 5px;
+ 
 }
 
 .card-content {
   padding: 15px;
 }
 
-.card-content h3 {
-  margin: 0 0 10px;
-  font-size: 1.25rem;
-}
 
-.card-content p {
-  font-size: 0.95rem;
-  color: #555;
+.h4 {
+  display:contents;
+ font-size: 18px;
+    color: rgb(253, 255, 255);
+    text-shadow: #ffffff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.p4 {
+    font-size: 18px;
+    color: rgb(253, 255, 255);
+    text-shadow: #ffffff;
+    box-shadow: #013cfe;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgba(255, 254, 254, 0.229);
+}
+.button {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  flex-direction:column-reverse;
+  padding: 1rem;
+  font-size: 18px;
+  text-align: center;
+  display:contents;
+  background-color: #a17af085;
+  box-shadow: #9a02ff;
+  color: #fffeff;
+  text-decoration:wavy;
+  transition: background-color 0.3s ease;
+  hover-effect: brightness(0.9);
+  padding: 10px 20px;
+  border-radius: 5px;
+  hover-transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.205);
 }
