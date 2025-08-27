@@ -12,6 +12,20 @@ h1 {
   cursor: text;
   margin-top: 20px;
 }
+.container {
+  display: flexbox;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
 body:before {
   content: "";
   position: absolute;
@@ -136,6 +150,7 @@ h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 body {
+
   width: 1000px;
   margin: 0 auto;
   overflow: hidden;
