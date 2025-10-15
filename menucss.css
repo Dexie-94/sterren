@@ -150,7 +150,7 @@ h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 body {
-
+ front-size: 16px;
   width: 1000px;
   margin: 0 auto;
   overflow: hidden;
