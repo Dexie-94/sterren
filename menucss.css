@@ -1,6 +1,6 @@
 body {
-width: 1920px;
-height: 1080px;
+width: 100dvw;
+height: 100dvh;
 margin: 0 auto;
 
 }
@@ -8,19 +8,17 @@ margin: 0 auto;
 h1 {
   color: transparent;
   text-shadow: 3px 3px 6px rgba(154, 153, 153, 0.5);
-  font-size: 85px;
+  font-size: 140px;
   text-align: center;
   background-image: url(letter.jpg);
   -webkit-background-clip: text;
   background-size: contain;
   background-clip: text;
-  -ms-text-kashida-space: inherit;
-  border-bottom: 1px solid rgba(154, 153, 153, 0.5);
-  cursor: text;
+  -ms-text-kashida-space: inherit;  cursor: text;
   margin-top: 20px;
 }
 .container {
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
@@ -82,16 +80,7 @@ body:before {
     }
   }
 }
-.link before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: turquoise;
-  border-radius: 5px;
-  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
-  transition: all 0.6s ease;
-}
+
 .link::before {
   bottom: 0;
   left: 0;
@@ -105,11 +94,13 @@ body:before {
 }
 
 #nav {
-  font-size: 30px;
+  font-size: 60px;
   text-align: center;
-  height: 100px;
-  width: 1000px;
+  height: 200px;
+  width: 100%;
+  top: 0 auto;
   position: fixed;
+  margin-top: 78px;
   z-index: 1;
   top: 130px;
 }
@@ -121,29 +112,27 @@ ul {
   display: flex;
   gap: 1.2rem;
 }
-il {
-  display: inline;
-  margin-right: 10px;
-  padding: 0;
-}
+
 h2 {
   color: rgba(255, 255, 255, 0.757);
   text-shadow: 0 0 10px rgba(0, 15, 100, 0.99);
-  font-size: 25px;
+  font-size: 50px;
   text-align: center;
+  width: 30%;
   margin-inline: 50px;
-  margin-top: 70px;
-  margin-bottom: 25px;;
+  margin-top: 150px;
+  margin-bottom: 25px;
+  margin-left: 430px;
   margin-right: 380px;
   padding: 1px;
   border-bottom-color: rgba(255, 255, 255, 0.592);
   border-bottom-width: 2px;
   border-bottom-left-radius: 15px;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 40px;
   border-bottom: solid;
   border-radius: 10px;
 }
+
 #footer {
   color: paleturquoise;
 
@@ -157,8 +146,6 @@ h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 body {
- front-size: 16px;
-  width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   background-image: url(2.jpeg);
@@ -194,7 +181,6 @@ body {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   z-index: 1;
-  border-inline-color: 3px 3px 6px rgba(154, 153, 153, 0.5);
   border-style: groove;
   border-width: 10px;
   border-color: rgba(166, 166, 166, 0.315);
@@ -202,43 +188,35 @@ body {
 }
 
 .overmij {
-  font-size: 18px;
+  font-size: 28px;
+  padding: 7px;
+  width: 50%;
+  height:45%;
   color: paleturquoise;
   text-shadow: #ffffff;
   box-shadow: #013cfe;
   font-family: "Comic Sans MS", cursive, sans-serif;
   box-sizing: border-box;
-  border-width: 2px;
-  margin-left: 100px;
-  margin-top: 130px;
-  margin-bottom: auto;
-  margin-right: 380px;
+  margin-left: 390px;
+  margin-top: 200px;
   background-color: rgba(0, 0, 0, 0.229);
-  border-bottom-right-radius: 6px;
-  border-bottom-width: 4px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-style: double;
-  border-color: rgba(69, 84, 169, 0.661);
+  border-radius: 6px;
+  border: rgba(69, 84, 169, 0.661) double 6px;
 }
 .overmij2 {
-  font-size: 18px;
+  font-size: 28px;
+  padding: 7px;
+  width: 50%;
+  height:45%;
   color: paleturquoise;
   text-shadow: #ffffff;
   box-shadow: #013cfe;
   font-family: "Comic Sans MS", cursive, sans-serif;
   box-sizing: border-box;
-  border-width: 2px;
-  margin-bottom: auto;
-  margin-right: 380px;
-  margin-left: 100px;
+  margin-left: 390px;
   background-color: rgba(0, 0, 0, 0.229);
-  border-bottom-right-radius: 6px;
-  border-bottom-width: 4px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-style: double;
-  border-color: rgba(69, 84, 169, 0.661);
+  border-radius: 6px;
+  border: rgba(69, 84, 169, 0.661) double 6px;
 }
 .over1 {
   font-size: 18px;
