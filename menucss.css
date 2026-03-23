@@ -8,14 +8,18 @@ margin: 0 auto;
 h1 {
   color: transparent;
   text-shadow: 3px 3px 6px rgba(154, 153, 153, 0.5);
-  font-size: 140px;
+  font-size: 130px;
   text-align: center;
-  background-image: url(letter.jpg);
+  background-image: url(./assets/letter.jpg);
   -webkit-background-clip: text;
   background-size: contain;
   background-clip: text;
   -ms-text-kashida-space: inherit;  cursor: text;
   margin-top: 20px;
+  width: 70%;
+  margin-left:320px;
+  top: 0 auto;
+  border-bottom: 2px rgba(255, 255, 255, 0.185) solid;
 }
 .container {
   display: flex;
@@ -94,7 +98,7 @@ body:before {
 }
 
 #nav {
-  font-size: 60px;
+  font-size: 55px;
   text-align: center;
   height: 200px;
   width: 100%;
@@ -116,9 +120,9 @@ ul {
 h2 {
   color: rgba(255, 255, 255, 0.757);
   text-shadow: 0 0 10px rgba(0, 15, 100, 0.99);
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
-  width: 30%;
+  width: 33%;
   margin-inline: 50px;
   margin-top: 150px;
   margin-bottom: 25px;
@@ -148,7 +152,7 @@ h2 {
 body {
   margin: 0 auto;
   overflow: hidden;
-  background-image: url(2.jpeg);
+  background-image: url(./assets/2.jpeg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -219,19 +223,20 @@ body {
   border: rgba(69, 84, 169, 0.661) double 6px;
 }
 .over1 {
-  font-size: 18px;
-  color: paleturquoise;
-  box-shadow: #013cfe;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(116, 247, 247);
+  text-shadow: #013cfe 2px 2px 3px;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .ik2 {
   position: absolute;
   position: right;
-  width: 270px;
-  height: 270px;
+  width: 430px;
+  height: 400px;
   top: 50%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%, -50%);
   font-size: 15px;
   color: white;
@@ -239,21 +244,19 @@ body {
   margin-left: 400px;
   margin-top: 50px;
   text-shadow: rgba(202, 202, 202, 0.5);
-  text-transform: unset;
   padding: 0px;
   border-radius: 80px;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   z-index: 1;
-  border-inline-color: 3px 3px 6px rgba(154, 153, 153, 0.5);
   border-style: groove;
   border-width: 10px;
   border-color: rgba(166, 166, 166, 0.315);
   cursor: not-allowed;
 }
 .logo6 {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 .p1 {
   height: 50px;
@@ -261,7 +264,7 @@ body {
 }
 
 .page {
-  font-size: 18px;
+  font-size: 25px;
   color: rgb(40, 230, 142);
   text-shadow: #ffffff;
   box-shadow: #013cfe;
@@ -270,18 +273,19 @@ body {
 
 .card-container2 {
   display: flex;
-  width: 1000px;
-  gap: 40px;
-  justify-content: center; /* Centreert de kaarten */
+  width: 70%;
+  gap: 50px;
+  margin-left: 350px;
+  justify-content:space-around; /* Centreert de kaarten */
   padding: 15px;
   margin-block: 1.5px;
   overflow-x: auto; /* Maakt de container scrollbaar als de kaarten breder zijn dan de container */
-  height: 300px;
+  height: 40%;
 }
 
 .card {
-  flex: 1 1 400px;
-  max-width: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.879);
@@ -295,7 +299,7 @@ body {
 
 .card img {
   width: 100%;
-  height: 140px;
+  height: 250px;
   display: block;
   border-bottom: #30eaff;
   border-bottom-style: groove;
@@ -307,18 +311,19 @@ body {
 }
 
 .h4 {
-  font-size: 18px;
+  font-size: 25px;
   color: rgb(253, 255, 255);
+  text-shadow: #4d01fe 2px 2px 7px;
   text-shadow: #ffffff;
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin-left: 5px;
 }
 
 .p4 {
-  font-size: 14px;
+  font-size: 20px;
   color: rgb(253, 255, 255);
   text-shadow: #ffffff;
-  box-shadow: #013cfe;
+  text-shadow: #4d01fe 2px 2px 7px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: rgba(255, 254, 254, 0.229);
   margin-left: 5px;
@@ -329,14 +334,15 @@ body {
 .button {
   font-family: "Comic Sans MS", cursive, sans-serif;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
-  background-color: #a17af085;
+  background-color: #a17af0b6;
   box-shadow: #9a02ff;
   color: #fffeff;
   text-decoration: wavy;
   transition: background-color 0.3s ease;
-  padding: 10px 20px;
+  padding: 13px 20px;
+  margin-top: 10px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.205);
   margin-left: 5px;
