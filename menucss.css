@@ -72,7 +72,7 @@ body:before {
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
-  box-shadow: 0 0 10px rgba(76, 97, 211, 0.661);
+  box-shadow: 0 0 10px rgba(65, 89, 224, 0.724);
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -207,7 +207,6 @@ body {
   width: 50%;
   height:45%;
   color: paleturquoise;
-  text-shadow: #ffffff;
   text-shadow: #084f3a 2px 1px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   box-sizing: border-box;
@@ -217,13 +216,16 @@ body {
   border-radius: 6px;
   border: rgba(69, 84, 169, 0.661) double 6px;
 }
+.groen{
+  color: rgb(77, 237, 146);
+  text-shadow: #393463 2px 2px;
+}
 .overmij2 {
   font-size: 28px;
   padding: 7px;
   width: 50%;
   height:45%;
   color: paleturquoise;
-  text-shadow: #ffffff;
   text-shadow: #084f3a 2px 1px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   box-sizing: border-box;
@@ -234,9 +236,13 @@ body {
 }
 .overmij2:hover{
   border: rgba(69, 152, 169, 0.661) double 6px;
+  border-radius: 40px;
+  padding:20px;
 }
 .overmij:hover{
   border: rgba(69, 152, 169, 0.661) double 6px;
+  border-radius: 40px;
+  padding:20px;
 }
 .over1 {
   font-size: 25px;
@@ -270,6 +276,12 @@ body {
   border-color: rgba(166, 166, 166, 0.315);
   cursor: not-allowed;
   animation: licht 4s ease-out infinite;
+}
+.ik2:hover{
+  background-image: url(./assets/letter.jpg);
+}
+.ik:hover{
+  background-image: url(./assets/letter.jpg);
 }
 @keyframes licht{
   0% {background-color: #00f7ff78;
